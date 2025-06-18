@@ -1,11 +1,62 @@
- .weather{
-    width: 35%;
-    height: 150%;
-    padding: 5px;
-    margin-left: 40%;
-    margin-top: 5%;
-    
+body {
+    background-color: rgb(182, 220, 219);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-h3{
+
+.weather {
+    max-width: 400px;
+    width: 90%;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 60%;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #023e8a;
+}
+
+h3 {
     text-decoration: underline;
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+    .weather {
+        width: 95%;
+        margin-top: 10%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
